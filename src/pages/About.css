@@ -1,14 +1,191 @@
+
+.aboutWrapper{
+    /* background-color: #172A3A; */
+    /* background: radial-gradient(circle, rgba(35,64,88,1) 0%, rgba(23,42,58,1) 100%); */
+    padding: 0px 2em;
+    color: #c8e6f3;
+    height: 100vh;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Horizontal Line */
+.hLine::after{
+    content: '';
+    display: block;
+    width: 100%; /* Adjust the width of the line */
+    height: 1px; /* Adjust the height of the line */
+    margin: 0.5rem auto; /* Adjust the margin to center the line */
+    background: linear-gradient(to right, transparent 10%, #09BC8A 45%, #09BC8A 55%, transparent 90%);
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.aboutProjectButton{
+    margin-top: 1.1em;
+    color: white;
+    display: inline-block;
+    border: 1px solid #09BC8A;
+    background-color: #09BC8A;
+    border-radius: 10px;
+    padding: 0.5em;
+    cursor: pointer;
+    margin-top: 2em;
+    transition: 0.5s;
+    text-shadow: 0px 0px 1px #172A3A;
+
+}
+.aboutProjectButton:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px 0px #74B3CE;
+    /* text-shadow: 0px 0px 4px #172A3A; */
+}
+
+#aboutSecond h1{
+    color: rgb(235, 235, 235);
+}
+#aboutSecond p{
+    color: #70d4ff;
+}
+
+/* Skills Section */
+#aboutEighth{
+    padding-bottom: 2em;
+}
+#aboutEighth h1{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between; /* Aligns skill text and bar at the ends */
+    align-items: center;
+}
+
+.skillName {
+    margin-right: 10px; /* Adds spacing between text and bar */
+    text-align: right; /* Right-aligns the text */
+    width: 80px; /* Adjust as needed for consistent width */
+}
+
+.skillsBar {
+    flex-grow: 1; /* The bar takes up all available space */
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: calc(100% - 120px); /* Adjust for consistent frame width */
+}
+
+.skillsBarFill {
+    height: 100%;
+    background-color: #09BC8A;
+    transition: width 0.5s ease;
+}
+
 /* Styles for screens 960px and above */
 @media screen and (min-width: 960px) {
     /* Add your styles here */
+    #aboutFirstSection{
+        min-height: 78vh;
+        padding-left: 4em;
+        padding-top: 2em;
+    }
+    #aboutSecond p{
+        display: none;
+    }
+
+    #aboutFirst p{
+        color: #09BC8A;
+    }
+    #aboutSecond h1{
+        margin-top: 0.35em;
+        font-size: 3rem;
+    }
+    #aboutThird h2{
+        margin-top: 0.25em;
+    }
+    #aboutFourth {
+        max-width: 45vw;
+    }
+    #aboutFourth p{
+        margin-top: 1em;
+    }
+    #aboutFourth p:first-child{
+        display: none;
+    }
+    #aboutFourth p:last-child{
+        /* color: yellow; */
+    }
+    #aboutSeventh{
+        align-self: center;
+    }
+    #aboutSeventh h1{
+        text-align: center;
+    }
+    #aboutSeventh p:nth-child(2){
+        text-align: center;
+        margin-bottom: 0.5em;
+        color: #70d4ff;
+    }
+    .skill{
+        max-width: 50vw;
+        margin-left: 20%;
+    }
 }
 
 /* Styles for screens between 768px and 959px */
 @media screen and (min-width: 768px) and (max-width: 959px) {
     /* Add your styles here */
+    #aboutFourth p:last-child{
+        display: none;
+    }
 }
 
 /* Styles for screens below 768px */
 @media screen and (max-width: 767px) {
     /* Add your styles here */
+    
+    #aboutFirst{
+        display: none;
+    }
+    /* Intro Section */
+    #aboutSecond h1{
+        margin-bottom: 0.1em;
+    }
+    #aboutSecond p{
+        margin-bottom: 1.5em;
+        padding-top: 0px;
+    }
+    
+    #aboutFifth{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    
+    /* Education Section */
+    #aboutSeventh h1{
+        text-align: center;
+    }
+    #aboutSeventh p:nth-child(2){
+        text-align: center;
+        margin-bottom: 0.5em;
+        color: #70d4ff;
+    }
+
+    #aboutThird{
+        display: none;
+    }
+    #aboutFourth p:last-child{
+        display: none;
+    }
 }

@@ -1,14 +1,83 @@
-/* Styles for screens 960px and above */
-@media screen and (min-width: 960px) {
-    /* Add your styles here */
+.navbar {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Styles for screens between 768px and 959px */
-@media screen and (min-width: 768px) and (max-width: 959px) {
-    /* Add your styles here */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
-/* Styles for screens below 768px */
-@media screen and (max-width: 767px) {
-    /* Add your styles here */
+.navbar-container img{
+  margin-top: 1em;
 }
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-links {
+    color: #83cceb;
+    transition: 0.3s ease;
+    text-decoration: none;
+    position: relative; /* Ensure the highlight box is positioned relative to the link */
+  }
+
+.nav-links:hover{
+  color: #09BC8A;
+  text-shadow: 0px 0px 0.5px #ffffff;
+}
+
+.active {
+    color: #09BC8A;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.active:hover{
+  color: #09BC8A;
+  text-shadow:none;
+}
+
+
+
+  
+  /* Styles for screens 960px and above */
+  @media screen and (min-width: 960px) {
+    /* Add your styles here */
+    .nav-item{
+      font-size: 1.5em;
+    }
+
+    .active{
+      font-size: 1.2em;
+    }
+  }
+  
+  /* Styles for screens between 768px and 959px */
+  @media screen and (min-width: 768px) and (max-width: 959px) {
+    /* Add your styles here */
+    .navbar-logo {
+      
+    }
+  }
+  
+  /* Styles for screens below 768px */
+  @media screen and (max-width: 767px) {
+    /* Add your styles here */
+    .navbar-logo {
+      
+    }
+  }
+  

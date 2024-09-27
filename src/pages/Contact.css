@@ -1,0 +1,60 @@
+.contact-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-container h1 {
+    color: #09BC8A; /* Match with your theme color */
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.contact-container p {
+    color: white; /* Set text color */
+    margin: 10px 0;
+    font-size: 1.2rem; /* Adjust font size */
+}
+
+.contact-methods {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the links */
+}
+
+.contact-link {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    color: #83cceb; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px;
+    margin: 10px 0;
+    transition: background-color 0.3s, color 0.3s; /* Transition for hover effects */
+    border-radius: 5px; /* Rounded corners */
+    transition: 0.3s ease; /* Smooth transition */
+}
+
+.contact-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+    color: #09BC8A; /* Change text color on hover */
+    font-size: 1.2rem; /* Adjust font size on hover */
+    font-weight: bold; /* Bold text on hover */
+}
+
+.contact-icon {
+    margin-right: 10px; /* Space between icon and text */
+    height: 40px; /* Adjust icon size */
+    width: 40px; /* Adjust icon size */
+}
+
+/* Horizontal Line */
+.hLine::after{
+    content: '';
+    display: block;
+    width: 100%; /* Adjust the width of the line */
+    height: 1px; /* Adjust the height of the line */
+    margin: 0.5rem auto; /* Adjust the margin to center the line */
+    background: linear-gradient(to right, transparent 10%, #09BC8A 45%, #09BC8A 55%, transparent 90%);
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+}

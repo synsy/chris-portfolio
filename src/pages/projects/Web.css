@@ -1,0 +1,80 @@
+.csharp-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.csharp-container ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.csharp-container li {
+    margin: 10px 0;
+    color: white;
+    width: auto; /* Change to auto or a specific width */
+    max-width: 600px; /* Optional: Set a max-width for the li */
+    width: 100%; /* Ensure it takes full width for better click area */
+}
+
+.project-link {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center vertically */
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color */
+    padding: 10px; /* Add padding for better click area */
+    transition: background-color 0.3s; /* Transition for hover effect */
+    width: 100%; /* Make the link take the full width of li */
+    justify-content: center; /* Center the content horizontally */
+}
+
+
+.project-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
+
+
+.csharp-container h1 {
+    color: #09BC8A; /* Match with your theme color */
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    font-weight: bold; /* Make it bold for more emphasis */
+}
+
+
+.csharp-container p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #83cceb;
+}
+
+.csharp-container img {
+    margin-right: 10px; /* Add some space between the image and the text */
+    height: 60px; /* Ensure the height of the image is consistent */
+}
+
+
+
+.csharp-container a {
+    color: #83cceb;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.csharp-container a:hover {
+    font-size: 1.2rem;
+}
+
+/* Horizontal Line */
+.hLine::after{
+    content: '';
+    display: block;
+    width: 100%; /* Adjust the width of the line */
+    height: 1px; /* Adjust the height of the line */
+    margin: 0.5rem auto; /* Adjust the margin to center the line */
+    background: linear-gradient(to right, transparent 10%, #09BC8A 45%, #09BC8A 55%, transparent 90%);
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+}

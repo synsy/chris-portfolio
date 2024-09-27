@@ -1,6 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body{
   font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     font-size: 16px;
+    background: radial-gradient(circle, rgba(35,64,88,1) 0%, rgba(23,42,58,1) 100%);
+}
+
+.app {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 1;
 }
