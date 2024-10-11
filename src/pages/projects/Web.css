@@ -1,79 +1,112 @@
-.csharp-container {
+.csharp-container-web {
     padding: 20px;
     text-align: center;
 }
 
-.csharp-container ul {
+.csharp-container-web h1 {
+    color: #09BC8A;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+.csharp-container-web ul {
     list-style-type: none;
     padding: 0;
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.csharp-container li {
+.csharp-container-web li {
     margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: background-color 0.3s, height 0.3s ease;
+}
+
+.project-header-web {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
     color: white;
-    width: auto; /* Change to auto or a specific width */
-    max-width: 600px; /* Optional: Set a max-width for the li */
-    width: 100%; /* Ensure it takes full width for better click area */
+    transition: background-color 0.3s;
 }
 
-.project-link {
-    display: flex; /* Use flexbox to align items */
-    align-items: center; /* Center vertically */
-    text-decoration: none; /* Remove underline from links */
-    color: white; /* Set link color */
-    padding: 10px; /* Add padding for better click area */
-    transition: background-color 0.3s; /* Transition for hover effect */
-    width: 100%; /* Make the link take the full width of li */
-    justify-content: center; /* Center the content horizontally */
+.project-details-web {
+    padding: 10px;
+    background-color: rgba(97, 97, 97, 0.009);
+    width: 100%;
 }
 
-
-.project-link:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+.project-details-web ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-.csharp-container h1 {
-    color: #09BC8A; /* Match with your theme color */
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    font-weight: bold; /* Make it bold for more emphasis */
-}
-
-
-.csharp-container p {
-    font-size: 1.2rem;
-    margin: 20px 0;
+.project-details-web li {
     color: #83cceb;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
 }
 
-.csharp-container img {
-    margin-right: 10px; /* Add some space between the image and the text */
-    height: 60px; /* Ensure the height of the image is consistent */
+.project-details-web-li-bold {
+    color: #09BC8A !important;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
+.project-header-web:hover {
+    background-color: rgba(9, 138, 188, 0.9);
+}
 
+.expanded .project-header-web {
+    background-color: rgba(9, 138, 188, 0.9);
+}
 
-.csharp-container a {
-    color: #83cceb;
+.project-details-web p {
+    color: white;
+}
+
+.project-link-button-web {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #09BC8A;
+    color: white;
     text-decoration: none;
-    transition: 0.3s ease;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.csharp-container a:hover {
-    font-size: 1.2rem;
+.project-link-button-web:hover {
+    background-color: #07a373;
 }
 
-/* Horizontal Line */
-.hLine::after{
+.expanded {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.hLine::after {
     content: '';
     display: block;
-    width: 100%; /* Adjust the width of the line */
-    height: 1px; /* Adjust the height of the line */
-    margin: 0.5rem auto; /* Adjust the margin to center the line */
+    width: 100%;
+    height: 1px;
+    margin: 0.5rem auto;
     background: linear-gradient(to right, transparent 10%, #09BC8A 45%, #09BC8A 55%, transparent 90%);
     margin-top: 2.5em;
     margin-bottom: 1.5em;
