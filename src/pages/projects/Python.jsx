@@ -17,7 +17,10 @@ function Python() {
                 <li className={`project-item-python ${expanded === 0 ? 'expanded' : ''}`}>
                     <div className="project-header-python" onClick={() => toggleExpand(0)}>
                         <span>Ultima Online Outlands Vendor Mall</span>
-                        <img src="../images/python.png" alt="logo" className="navbar-icon" height="60px" />
+                        <div className="navbar-icon-container">
+                            <img src="../images/django.png" alt="logo" className="navbar-icon" height="60px" />
+                            <img src="../images/python.png" alt="logo" className="navbar-icon" height="60px" />
+                        </div>
                     </div>
                     {expanded === 0 && (
                         <div className="project-details-python">
@@ -25,12 +28,13 @@ function Python() {
                             <ul>
                                 <li>Current version: 0.4a</li>
                                 <li className="project-details-python-li-bold">Current Features:</li>
+                                <li>Created with Django</li>
                                 <li>OAuth2 with Discord</li>
                                 <li>Advanced custom made parser for user uploads</li>
-                                <li>Database upload using PostgreSQL and OAuth2</li>
-                                <li>Backend created with Python</li>
+                                <li>Database upload using SQLite and OAuth2</li>
+                                <li>Database query retrievals displaying results to HTML table</li>
                                 <li className="project-details-python-li-bold">Work in Progress:</li>
-                                <li>Retrieving from database and displaying results</li>
+                                <li>Refining OAuth2 integration</li>
                             </ul>
                             {/* <a
                                 href="#"

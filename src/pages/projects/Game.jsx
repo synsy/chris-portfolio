@@ -13,6 +13,56 @@ function Game() {
             <h1>Game Projects</h1>
             <div className="hLine"></div>
             <ul>
+                <li className={`project-item-game ${expanded === 1 ? 'expanded' : ''}`}>
+                    <div className="project-header-game" onClick={() => toggleExpand(1)}>
+                        <span>Galaxy Cab</span>
+                        <img src="../images/unity.png" alt="logo" className="navbar-icon" height="60px" />
+                    </div>
+                    {expanded === 1 && (
+                        <div className="project-details-game">
+                            <p>A futuristic taxi game set in space. Coming October 2024</p>
+                            <p>This is my current project I am working on. Updates will be pushed regularly, come back soon to see new features added!</p>
+                            {/* Adding a list element only for Galaxy Cab */}
+                            <ul>
+                                <li>Current version: 0.3a</li>
+                                <li className="project-details-game-li-bold">Features:</li>
+                                <li>Composition over Inheritance design.</li>
+                                <li>3D gameplay</li>
+                                <li>Custom made Finite State Machine</li>
+                                <li className="project-details-game-li-bold">Work in Progress:</li>
+                                <li>Setup player animations.</li>
+                                <li>Setup game audio.</li>
+                                <li>Setup damage/death mechanics.</li>
+                                <li>Setup initial gameplay loop.</li>
+                                <li>Click the link below to track my progress on Clickup!</li>
+                            <a
+                                href="https://sharing.clickup.com/9011448469/b/h/6-901105623632-2/04abe457d4de330"
+                                className="project-link-button-game"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Clickup Board
+                            </a>
+                            <a
+                                href="https://github.com/synsy/GalaxyCab3D"
+                                className="project-link-button-game"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Github
+                            </a>
+                            </ul>
+                            <a
+                                href="https://play.unity.com/en/games/54d18264-4efa-4917-9e26-b81b84cf4659/galaxy-cab"
+                                className="project-link-button-game"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Play Galaxy Cab
+                            </a>
+                        </div>
+                    )}
+                </li>
                 {/* Kinder Games Project */}
                 <li className={`project-item-game ${expanded === 0 ? 'expanded' : ''}`}>
                     <div className="project-header-game" onClick={() => toggleExpand(0)}>
@@ -47,18 +97,6 @@ function Game() {
                 </li>
 
                 {/* Other Projects */}
-                <li className={`project-item-game ${expanded === 1 ? 'expanded' : ''}`}>
-                    <div className="project-header-game" onClick={() => toggleExpand(1)}>
-                        <span>Galaxy Cab - Coming October 2024</span>
-                        <img src="../images/unity.png" alt="logo" className="navbar-icon" height="60px" />
-                    </div>
-                    {expanded === 1 && (
-                        <div className="project-details-game">
-                            <p>A futuristic taxi game set in space. Coming soon in October 2024.</p>
-                        </div>
-                    )}
-                </li>
-
                 <li className={`project-item-game ${expanded === 2 ? 'expanded' : ''}`}>
                     <div className="project-header-game" onClick={() => toggleExpand(2)}>
                         <span>Ultimate RPG - Coming soon</span>

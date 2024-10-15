@@ -9,12 +9,16 @@ function Contact() {
             <div className="hLine"></div>
             <div className="contact-methods">
                 <a href="mailto:codell88@gmail.com" className="contact-link">
-                    <img src="../images/email.webp" alt="Email" className="contact-icon" />
+                    <img src="../images/email.png" alt="Email" className="contact-icon" />
                     Email Me
                 </a>
                 <a href="https://www.linkedin.com/in/codell88" target="_blank" rel="noopener noreferrer" className="contact-link">
-                    <img src="../images/linkedin.webp" alt="LinkedIn" className="contact-icon" />
+                    <img src="../images/linkedin.png" alt="LinkedIn" className="contact-icon" />
                     Connect on LinkedIn
+                </a>
+                <a href="https://github.com/synsy/" target="_blank" rel="noopener noreferrer" className="contact-link">
+                    <img src="../images/github.png" alt="Github" className="contact-icon" />
+                    View my Github
                 </a>
             </div>
         </div>

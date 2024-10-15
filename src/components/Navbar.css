@@ -68,16 +68,12 @@
   /* Styles for screens between 768px and 959px */
   @media screen and (min-width: 768px) and (max-width: 959px) {
     /* Add your styles here */
-    .navbar-logo {
-      
-    }
+
   }
   
   /* Styles for screens below 768px */
   @media screen and (max-width: 767px) {
     /* Add your styles here */
-    .navbar-logo {
-      
-    }
+
   }
   

@@ -22,7 +22,7 @@ function Web() {
                     {expanded === 0 && (
                         <div className="project-details-web">
                             <p>Web Development Business Site</p>
-                            {/* List details similar to Kinder Games */}
+                            {/* List details */}
                             <ul>
                                 <li className="project-details-web-li-bold">Features:</li>
                                 <li>Made with React</li>
@@ -46,12 +46,25 @@ function Web() {
                 {/* Other Web Projects */}
                 <li className={`project-item-web ${expanded === 1 ? 'expanded' : ''}`}>
                     <div className="project-header-web" onClick={() => toggleExpand(1)}>
-                        <span>Web Project 2 - Coming soon</span>
-                        <img src="../images/web.png" alt="logo" className="navbar-icon" height="60px" />
+                        <span>UO Outlands Vendor Mall</span>
+                        <div className="navbar-icon-container">
+                            <img src="../images/nodejs.svg" alt="logo" className="navbar-icon" height="60px" />
+                            <img src="../images/web.png" alt="logo" className="navbar-icon" height="60px" />
+                        </div>
                     </div>
                     {expanded === 1 && (
                         <div className="project-details-web">
-                            <p>Details about Web Project 2 coming soon.</p>
+                            <p>UOOutlands Vendor Mall Coming Soon</p>
+                            <ul>
+                                <li>Current version: 0.4a</li>
+                                <li className="project-details-python-li-bold">Current Features:</li>
+                                <li>OAuth2 with Discord</li>
+                                <li>Advanced custom made parser for user uploads</li>
+                                <li>Database upload using PostgreSQL and OAuth2</li>
+                                <li>Backend created with Node.js</li>
+                                <li className="project-details-python-li-bold">Work in Progress:</li>
+                                <li>Retrieving from database and displaying results</li>
+                            </ul>
                         </div>
                     )}
                 </li>
