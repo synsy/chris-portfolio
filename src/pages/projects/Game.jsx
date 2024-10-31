@@ -13,6 +13,35 @@ function Game() {
             <h1>Game Projects</h1>
             <div className="hLine"></div>
             <ul>
+            <li className={`project-item-game ${expanded === 3 ? 'expanded' : ''}`}>
+                    <div className="project-header-game" onClick={() => toggleExpand(3)}>
+                        <span>GameJam Contributions</span>
+                        <img src="../images/unity.png" alt="logo" className="navbar-icon" height="60px" />
+                    </div>
+                    {expanded === 3 && (
+                        <div className="project-details-game">
+                            <p>Various contributions to GameJams:</p>
+                            {/* Adding a list element only to Kinder Games */}
+                            <ul>
+                                <li>Graveyard Shift</li>
+                                <li className="project-details-game-li-bold">Key Notes:</li>
+                                <li>I worked as the Lead Programmer in a team of 3.</li>
+                                <li className="project-details-game-li-bold">Description:</li>
+                                <li>2D Game made in Unity.</li>
+                                <li>One week timeframe for an itch.io GameJam.</li>
+                                <li>Written reflection coming soon!</li>
+                            </ul>
+                            <a
+                                href="https://play.unity.com/en/games/64c0c7ca-6812-4007-ba90-9c57ece0123c/grave-digger"
+                                className="project-link-button-game"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Play Graveyard Shift
+                            </a>
+                        </div>
+                    )}
+                </li>
                 <li className={`project-item-game ${expanded === 1 ? 'expanded' : ''}`}>
                     <div className="project-header-game" onClick={() => toggleExpand(1)}>
                         <span>Galaxy Cab</span>
@@ -20,7 +49,7 @@ function Game() {
                     </div>
                     {expanded === 1 && (
                         <div className="project-details-game">
-                            <p>A futuristic taxi game set in space. Coming October 2024</p>
+                            <p>A futuristic taxi game set in space. Coming November 2024</p>
                             <p>This is my current project I am working on. Updates will be pushed regularly, come back soon to see new features added!</p>
                             {/* Adding a list element only for Galaxy Cab */}
                             <ul>
@@ -95,7 +124,7 @@ function Game() {
                         </div>
                     )}
                 </li>
-
+                
                 {/* Other Projects */}
                 <li className={`project-item-game ${expanded === 2 ? 'expanded' : ''}`}>
                     <div className="project-header-game" onClick={() => toggleExpand(2)}>
@@ -105,18 +134,6 @@ function Game() {
                     {expanded === 2 && (
                         <div className="project-details-game">
                             <p>An immersive RPG experience in the making. Stay tuned!</p>
-                        </div>
-                    )}
-                </li>
-
-                <li className={`project-item-game ${expanded === 3 ? 'expanded' : ''}`}>
-                    <div className="project-header-game" onClick={() => toggleExpand(3)}>
-                        <span>GameJam Contributions - Coming October 2024</span>
-                        <img src="../images/unity.png" alt="logo" className="navbar-icon" height="60px" />
-                    </div>
-                    {expanded === 3 && (
-                        <div className="project-details-game">
-                            <p>Various contributions to upcoming GameJams. Available October 2024.</p>
                         </div>
                     )}
                 </li>
