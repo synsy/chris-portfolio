@@ -55,8 +55,9 @@ function Resume() {
           <p>Responsive website designed with React for a web development business.</p></a>
         </div>
         <div className="resume-item">
-          <h3>Project Name 2</h3>
-          <p>Description of the project, what technologies were used, and the impact or outcome.</p>
+          <a href="https://play.unity.com/en/games/64c0c7ca-6812-4007-ba90-9c57ece0123c/grave-digger" target="_blank"><h3>Graveyard Shift</h3>
+          <p>Lead programmer in a team of 3 for an itch.io GameJam. The GameJam was a one week time-frame and required communication,
+          organization, and teamwork to accomplish in a short period of time with team members located in different parts of the world.</p></a>
         </div>
       </section>
     </div>
