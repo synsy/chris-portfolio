@@ -7,6 +7,7 @@ function About() {
 
   const [skillLevels] = useState({
     CSharp: 85,
+    CPP: 85,
     Python: 80,
     Java: 70,
     HTML: 90,
@@ -14,7 +15,7 @@ function About() {
     JavaScript: 75,
     React: 70,
     SQL: 70,
-    Git: 60,
+    Git: 80,
     Unity: 80,
     Godot: 50,
     UE5: 40,
@@ -52,8 +53,8 @@ function About() {
           <p>Southern New Hampshire University</p>
           <p>Major: Computer Science</p>
           <p>Concentration: Software Engineering</p>
-          <p>Current GPA: 4.0</p>
-          <p>Expected Graduation: September 2025</p>
+          <p>Current GPA: 3.77</p>
+          <p>Expected Graduation: December 2025</p>
         </div>
         <div className="hLine"></div>
         <div className="aboutContainer" id="aboutEighth">
@@ -63,6 +64,12 @@ function About() {
               <p className="skillName">C#</p>
               <div className="skillsBar">
                 <div className="skillsBarFill" style={{ width: `${skillLevels.CSharp}%` }}></div>
+              </div>
+            </div>
+            <div className="skill">
+              <p className="skillName">C++</p>
+              <div className="skillsBar">
+                <div className="skillsBarFill" style={{ width: `${skillLevels.CPP}%` }}></div>
               </div>
             </div>
             <div className="skill">
@@ -125,12 +132,12 @@ function About() {
                 <div className="skillsBarFill" style={{ width: `${skillLevels.Godot}%` }}></div>
               </div>
             </div>
-            <div className="skill">
+            {/* <div className="skill">
               <p className="skillName">UE5</p>
               <div className="skillsBar">
                 <div className="skillsBarFill" style={{ width: `${skillLevels.UE5}%` }}></div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

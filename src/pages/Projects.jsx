@@ -5,9 +5,10 @@ import './Projects.css';
 
 function Projects() {
     const categories = [
-        { name: 'Web', description: 'Web-based projects.', path: '/web', image: "/images/web.png" },
-        { name: 'Python', description: 'Python scripts and applications.', path: '/python', image: "/images/python.png" },
-        { name: 'Game', description: 'Game development projects.', path: '/game', image: "/images/unity.png" }
+        { name: 'Web', description: 'Web-based projects', path: '/web', image: "/images/web.png" },
+        { name: 'Python', description: 'Python scripts and applications', path: '/python', image: "/images/python.png" },
+        { name: 'C++', description: 'C++ projects', path: '/cpp', image: "/images/cpp.png" },
+        { name: 'Game', description: 'Game development projects', path: '/game', image: "/images/unity.png" }
     ];
 
     return (

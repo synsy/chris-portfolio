@@ -88,6 +88,11 @@
     color: white;
 }
 
+.gameTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 .project-link-button-game {
     display: inline-block;
     margin-top: 10px;
@@ -103,6 +108,9 @@
 
 .project-link-button-game:hover {
     background-color: #07a373;
+    transform: scale(1.1);
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px 0px #74B3CE;
 }
 
 .expanded {

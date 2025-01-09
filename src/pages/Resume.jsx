@@ -7,7 +7,7 @@ function Resume() {
       <h1>My Resume</h1>
       {/* PDF Download Button */}
       <div className="resumeButton-container">
-        <a href="/ODellResume.pdf" download className="resumeButton">
+        <a href="/ChrisODellResume.pdf" download className="resumeButton">
           Download Resume
         </a>
       </div>
@@ -39,12 +39,14 @@ function Resume() {
       <section className="resume-section">
         <h2>Skills</h2>
         <ul className="skills-list">
+          <li>Communication</li>
+          <li>Problem-solving and Critical Thinking</li>
+          <li>Leadership and Team Management</li>
+          <li>C#</li>
+          <li>C++</li>
           <li>Python</li>
           <li>JavaScript / React</li>
           <li>HTML / CSS</li>
-          <li>C#</li>
-          <li>Leadership and Team Management</li>
-          <li>Problem-solving and Critical Thinking</li>
         </ul>
       </section>
 
@@ -55,7 +57,13 @@ function Resume() {
           <p>Responsive website designed with React for a web development business.</p></a>
         </div>
         <div className="resume-item">
-          <a href="https://play.unity.com/en/games/64c0c7ca-6812-4007-ba90-9c57ece0123c/grave-digger" target="_blank"><h3>Graveyard Shift</h3>
+          <a href="https://github.com/synsy/EagleJam" target="_blank"><h3>Death Flight</h3>
+          <p>Programmer in a team of 4 for an itch.io GameJam hosted by UC Berkeley. The GameJam was a 48 hour time-frame and required communication,
+          organization, and teamwork to accomplish in a short period of time with team members located in different parts of the world.</p>
+          <p>🏆Placed 2nd overall.</p></a>
+        </div>
+        <div className="resume-item">
+          <a href="https://github.com/synsy/GraveyardJam" target="_blank"><h3>Graveyard Shift</h3>
           <p>Lead programmer in a team of 3 for an itch.io GameJam. The GameJam was a one week time-frame and required communication,
           organization, and teamwork to accomplish in a short period of time with team members located in different parts of the world.</p></a>
         </div>

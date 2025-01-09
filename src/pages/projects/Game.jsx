@@ -21,14 +21,40 @@ function Game() {
                     {expanded === 3 && (
                         <div className="project-details-game">
                             <p>Various contributions to GameJams:</p>
-                            {/* Adding a list element only to Kinder Games */}
+                            {/* Listing for Death Flight */}
                             <ul>
-                                <li>Graveyard Shift</li>
+                                <li className="gameTitle">Death Flight</li>
+                                <li className="project-details-game-li-bold">Key Notes:</li>
+                                <li>I worked as the sole Programmer in a team of 4.</li>
+                                <li className="project-details-game-li-bold">Description:</li>
+                                <li>2D Game made in Unity.</li>
+                                <li>48 hour time frame for an itch.io GameJam hosted by UC Berkeley.</li>
+                                <li>Written reflection coming soon!</li>
+                            <a
+                                href="https://play.unity.com/en/games/d5974af5-ff8f-4f85-8ecc-d1386fecf1d2/death-flight"
+                                className="project-link-button-game"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Play Death Flight
+                            </a>
+                            <a
+                                href="https://github.com/synsy/EagleJam"
+                                className="project-link-button-game"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View GitHub
+                            </a>
+                            </ul>
+                            {/* Listing for Graveyard Shift */}
+                            <ul>
+                                <li className="gameTitle">Graveyard Shift</li>
                                 <li className="project-details-game-li-bold">Key Notes:</li>
                                 <li>I worked as the Lead Programmer in a team of 3.</li>
                                 <li className="project-details-game-li-bold">Description:</li>
                                 <li>2D Game made in Unity.</li>
-                                <li>One week timeframe for an itch.io GameJam.</li>
+                                <li>One week time frame for an itch.io GameJam.</li>
                                 <li>Written reflection coming soon!</li>
                             </ul>
                             <a
