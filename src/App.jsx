@@ -5,6 +5,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Web from './pages/projects/Web';
 import Python from './pages/projects/Python'; 
+import Cpp from './pages/projects/Cpp';
 import Game from './pages/projects/Game'; 
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/web" element={<Web />} />
         <Route path="/python" element={<Python />} />
+        <Route path="/cpp" element={<Cpp />} />
         <Route path="/game" element={<Game />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />
